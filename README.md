@@ -14,6 +14,18 @@ The first release focuses on:
 - preventing results from being labeled quantum without an appropriate
   nonclassicality witness.
 
+The first physical garage build is
+[GhostBox-32](projects/ghostbox-32/README.md): a monitor/projector and old webcam
+reconstruct a target from scalar bucket readings using 2,048 complementary
+exposures. Commission its analysis without hardware:
+
+```powershell
+photonbench ghost-demo --side 16 --output reports\ghostbox-16
+```
+
+See the [ranked garage-project portfolio](projects/README.md) for follow-on
+DarkBox, RAW sensor metrology, SPAD-ToF, coincidence, and HBT builds.
+
 ## Scientific boundary
 
 | Evidence | Allowed wording | Not established |
@@ -101,4 +113,3 @@ Do not attempt an SPDC/entanglement optical setup from this repository. Such
 setups commonly involve Class 3B violet/UV pump lasers and require trained
 supervision, wavelength-rated protection, enclosed beam paths, beam dumps, and
 real hardware interlocks. A software checkbox is not a safety interlock.
-
